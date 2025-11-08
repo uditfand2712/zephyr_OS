@@ -1,0 +1,15 @@
+manifest:
+  self:
+    path: .
+  remotes:
+    - name: zephyrproject
+      url-base: https://github.com/zephyrproject-rtos
+  projects:
+    - name: zephyr
+      remote: zephyrproject
+      revision: main
+      path: zephyr
+    - name: littlefs
+      remote: zephyrproject
+      revision: main
+      path: modules/fs/littlefs
