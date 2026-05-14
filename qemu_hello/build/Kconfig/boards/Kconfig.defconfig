@@ -1,2 +1,0 @@
-# Load Zephyr board defconfig descriptions.
-osource "/home/udit27/zephyrproject/zephyr/boards/qemu/cortex_m3/Kconfig.defconfig"

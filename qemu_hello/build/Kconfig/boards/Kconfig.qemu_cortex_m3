@@ -1,2 +1,0 @@
-# Load board Kconfig descriptions.
-osource "/home/udit27/zephyrproject/zephyr/boards/qemu/cortex_m3/Kconfig.qemu_cortex_m3"
