@@ -1,3 +1,4 @@
-/qemu_hello/build
-/qemu_mutex/build
-/qeum_thread/build
+qemu_hello/build
+qemu_mutex/build
+qemu_threads/build
+
