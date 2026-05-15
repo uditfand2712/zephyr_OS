@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: '/home/udit/zephyrproject/projects/zephyr_OS/qemu_threads'
+    source-dir: '/home/udit/zephyrproject/projects/zephyr_OS/qemu_threads'
+  board:
+    name: 'qemu_cortex_m3'
+    path:
+     - '/home/udit/zephyrproject/zephyr/boards/qemu/cortex_m3'
+    qualifiers: 'ti_lm3s6965'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/udit/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/udit/zephyrproject/zephyr/boards/qemu/cortex_m3/qemu_cortex_m3.dts'
+    include-dirs:
+     - '/home/udit/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/udit/zephyrproject/modules/hal/atmel/include'
+     - '/home/udit/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/udit/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/udit/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/udit/zephyrproject/modules/hal/microchip/include'
+     - '/home/udit/zephyrproject/modules/hal/microchip/dts'
+     - '/home/udit/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/udit/zephyrproject/modules/hal/nxp/dts'
+     - '/home/udit/zephyrproject/modules/hal/stm32/dts'
+     - '/home/udit/zephyrproject/modules/hal/ti/dts'
+     - '/home/udit/zephyrproject/zephyr/include'
+     - '/home/udit/zephyrproject/zephyr/include/zephyr'
+     - '/home/udit/zephyrproject/zephyr/dts/common'
+     - '/home/udit/zephyrproject/zephyr/dts/vendor'
+     - '/home/udit/zephyrproject/zephyr/dts/rx'
+     - '/home/udit/zephyrproject/zephyr/dts/x86'
+     - '/home/udit/zephyrproject/zephyr/dts/xtensa'
+     - '/home/udit/zephyrproject/zephyr/dts/sparc'
+     - '/home/udit/zephyrproject/zephyr/dts/riscv'
+     - '/home/udit/zephyrproject/zephyr/dts/posix'
+     - '/home/udit/zephyrproject/zephyr/dts/arm64'
+     - '/home/udit/zephyrproject/zephyr/dts/arm'
+     - '/home/udit/zephyrproject/zephyr/dts/arc'
+     - '/home/udit/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/udit/zephyrproject/zephyr/boards/qemu/cortex_m3/qemu_cortex_m3_defconfig'
+     - '/home/udit/zephyrproject/projects/zephyr_OS/qemu_threads/prj.conf'
+    user-files:
+     - '/home/udit/zephyrproject/projects/zephyr_OS/qemu_threads/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/udit/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/udit/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/udit/zephyrproject/.venv/bin/west build -b qemu_cortex_m3'
+  topdir: '/home/udit/zephyrproject'
+  version: '1.5.0'
